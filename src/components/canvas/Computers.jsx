@@ -10,7 +10,7 @@ const Computers = ({ isMobile }) => {
   //     console.log(`Loaded ${itemsLoaded} of ${itemsTotal} items`);
   //   loader.manager.onLoad = () => console.log("Loading complete");
   // });
-  const computer = useGLTF("/desktop_pc/scene.gltf");
+  const computer = `${import.meta.env.BASE_URL}desktop_pc/scene.gltf`;
   return (
     <mesh>
       <hemisphereLight intensity={1} groundColor="black" />
